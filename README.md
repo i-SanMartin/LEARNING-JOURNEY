@@ -1,28 +1,36 @@
 ROADMAP
  
-	LANGUAGES: PYTHON("PYTHON CRASH COURSE", "AUTOMATE THE BORING STUFF", "BEYOND THE BASIC STUFF WITH PYTHON", "DIVE INTO ALGORYTHMS"),SQL
+	LANGUAGES: 
+ 		PYTHON("PYTHON CRASH COURSE", "AUTOMATE THE BORING STUFF", "BEYOND THE BASIC STUFF WITH PYTHON", "DIVE INTO ALGORYTHMS")
+   		SQL
 	
-	LIBRERIES:PANDAS/POLARS, PYTORCH/TENSORFLOW, NUMPY, SCIKIT-LEARN...
+	LIBRERIES:
+ 		PANDAS/POLARS
+     		NUMPY
+       		SCIKIT-LEARN...
+   		PYTORCH/TENSORFLOW
 	
-	STUDY: 	  DATA MANIPULATION AND EXPLORATION
-					  MATH & STATISTICS
-					  NEURAL NETWORKS
-					  EVALUACION Y VALIDACION DE MODELOS
+	STUDY: 	  
+ 		DATA MANIPULATION AND EXPLORATION
+		MATH & STATISTICS
+		NEURAL NETWORKS
+		EVALUACION Y VALIDACION DE MODELOS
 					
-	OTHER REQUIREMENTS: HUB
+	OTHER REQUIREMENTS: 
+ 		HUB
 	
 	FREELANCE PROJECTS:
-						Freelancer
-						Upwork
-						Twago
-						PeoplePerHour
-						Fiverr
-						Truelancer
-											
+		Freelancer
+		Upwork
+		Twago
+		PeoplePerHour
+		Fiverr
+		Truelancer
+							
 	OPEN SOURCE CONTRIBUTIONS
-						Pipenv: Python Development Workflow for Humans
-						Chatistics: Python scripts to parse your Messenger, Hangouts, and Telegram Chat Logs into DataFrames
-						Som-TCP: Solving the Traveling Salesman Problem using Self-Organizing Maps
-						Py2bpf: A python to bpf (Berkeley Packet Filter bytecode) converter
+		Pipenv: Python Development Workflow for Humans
+		Chatistics: Python scripts to parse your Messenger, Hangouts, and Telegram Chat Logs into DataFrames
+		Som-TCP: Solving the Traveling Salesman Problem using Self-Organizing Maps
+		Py2bpf: A python to bpf (Berkeley Packet Filter bytecode) converter
 
 	
