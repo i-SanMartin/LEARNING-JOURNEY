@@ -20,6 +20,7 @@ PYTHON AS A CALCULATOR
       Fraction(-8, 5)
     complex: Ex:3+5j
 
+  Comparatos: < > <= >= == !=
 TEXT
   Python uses type str to work with text.
   Can be enclosed in single quotes '...' or double quotes "...".
@@ -66,5 +67,7 @@ LIST
     ["Red", "Green", "Blue", "Alph"]
 
   Lists can be nested into lists.
+
+EXTRA
+
   
-    
