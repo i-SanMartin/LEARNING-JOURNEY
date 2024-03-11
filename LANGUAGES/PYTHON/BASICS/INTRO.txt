@@ -1,0 +1,70 @@
+
+PYTHON AS A CALCULATOR
+  Python can work with several types of number as int or float.
+  Operators: + - * /.
+  Division always returns float type.
+  () can be used for grouping.
+  // returns floor division.
+  % returns remainder of division.
+  ** calculate powers.
+  = assigns a value to a variable.
+  variables are declarated by assigning a value.
+
+  Apart from int or float the other types are:
+    decimal: constructs a decimal based on a value that can be a string a float or tuple.
+      tuple: Decimal((0, (1, 4, 1, 4), -3)) returns Decimal('1.414').
+      float: Decimal(float('1.1')) converts to Decimal('1.100000000000000088817841970012523233890533447265625')      
+    fractions: provides support for rational number arithmetic
+      >>>from fractions import Fraction
+      >>>Fraction(16, -10)
+      Fraction(-8, 5)
+    complex: Ex:3+5j
+
+TEXT
+  Python uses type str to work with text.
+  Can be enclosed in single quotes '...' or double quotes "...".
+
+  To quoute a quoute we "escape" it with \: "\"Yay!\" he said".
+  Or use other type o quotation mark: '"Yay!" he said'.
+
+  print() function outputs a text or a number in the python shell.
+  Omits escaped and special charactes (as line jump \n)
+
+  If it is not desired to interpret special characters preceded by \ raw strings can be used.
+  Ex: r'C:\some\name'.
+  Cannot end in an odd number of backlashes \.
+
+  String of multiple lines with triple quotes: """...""".
+  The + operator concatenates strings
+  Strings can be indexed with []: [0], [5], [-2]
+  And sliced: [2:4], [2:], [4:]. Star included, end excluded.
+  len() returns de length of a string: len(s)
+
+LIST
+  Python has different compound data types. The most versatile is the list, that can be written as csv between brackets.
+  Can contain different types.
+  Can be indexed [] and concatenated with + as strings.
+  Strings are immutable and lists mutable. Ex: list[2]= 5.
+  Assignments can be done to slices: list[1:2]=[2,3].
+  Add new elementes with append(). Ex: list.append(3).
+
+  Assignments do not copy data, when a list is assigned to a variable, the variable refers to the existing list.
+    >>>rgb = ["Red", "Green", "Blue"]
+    >>>rgba = rgb
+    >>>id(rgb) == id(rgba)  # they reference the same object
+    True
+    >>>rgba.append("Alph")
+    >>>rgb
+    ["Red", "Green", "Blue", "Alph"]
+
+  If we want to copy a list we have to slice a existing list.
+    >>>correct_rgba = rgba[:]
+    >>>correct_rgba[-1] = "Alpha"
+    >>>correct_rgba
+    ["Red", "Green", "Blue", "Alpha"]
+    >>>rgba
+    ["Red", "Green", "Blue", "Alph"]
+
+  Lists can be nested into lists.
+  
+    
