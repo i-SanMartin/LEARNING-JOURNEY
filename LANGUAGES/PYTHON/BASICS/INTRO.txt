@@ -69,5 +69,14 @@ LIST
   Lists can be nested into lists.
 
 EXTRA
+  Assign two values.
+    >>> a, b = 0, 1
+    >>> a, b = b, a + b
 
-  
+  print arguments:
+    >>>print('The value of i is', i)
+    The value of i is 65536
+
+    Avoid end of line:
+    >>>print(a, end=',')
+    
