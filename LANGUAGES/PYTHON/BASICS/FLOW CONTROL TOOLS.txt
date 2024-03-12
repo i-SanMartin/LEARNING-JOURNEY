@@ -1,0 +1,96 @@
+
+WHILE
+  Executes the loop as long as the condition is met.
+    # Fibonacci series:
+    # the sum of two elements defines the next
+    a, b = 0, 1
+    while a < 10:
+        print(a)
+        a, b = b, a+b
+
+  The condition can be any type: int, list, string...
+  Any non zero value is considered as True
+
+IF
+  Executes the code inside the 'if' if the condition is met.
+  There can be 0 or more elif and the else part is optional.
+    x = int(input("Please enter an integer: "))
+    Please enter an integer: 42
+    if x < 0:
+        x = 0
+        print('Negative changed to zero')
+    elif x == 0:
+        print('Zero')
+    elif x == 1:
+        print('Single')
+    else:
+        print('More')
+
+FOR
+  Iterates over the elements of any sequence (list,string...).
+    # Measure some strings:
+    words = ['cat', 'window', 'defenestrate']
+    for w in words:
+        print(w, len(w))
+  It can be used to modify elements of a collection.
+    # Create a sample collection
+    users = {'Hans': 'active', 'Éléonore': 'inactive', '景太郎': 'active'}
+    
+    # Strategy:  Iterate over a copy
+    for user, status in users.copy().items():
+        if status == 'inactive':
+            del users[user]
+    
+    # Strategy:  Create a new collection
+    active_users = {}
+    for user, status in users.items():
+        if status == 'active':
+        active_users[user] = status
+
+  range() function generates arithmetic progressions. Handy to use with for loops
+    for i in range(5):
+      print(i)
+  other ways to use range():
+    list(range(5, 10))
+    [5, 6, 7, 8, 9]
+    
+    list(range(0, 10, 3))
+    [0, 3, 6, 9]
+    
+    list(range(-10, -100, -30))
+    [-10, -40, -70]
+
+BREAK, CONTINUE AND ELSE IN LOOPS
+  'break' breaks out of the innermost for or while loop.
+
+  In a for loop 'else' executes after the final iteration.
+  In a while loop 'else executes when teh condition is not met.
+  'else' it is not executed if loop ends because 'break' instruction.
+
+  'continue' ends current iteration and starts the next one.
+
+PASS
+  'pass' doesn´t do anything:
+    while True:
+      pass  # Busy-wait for keyboard interrupt (Ctrl+C)
+
+    def initlog(*args):
+      pass   # Remember to implement this!
+  
+MATCH
+  'match' statement takes an expression and compares its value with successive values.
+  Only the first pattern that matches is executed.
+    def http_error(status):
+    match status:
+        case 400:
+            return "Bad request"
+        case 404:
+            return "Not found"
+        case 418:
+            return "I'm a teapot"
+        case _:
+            return "Something's wrong with the internet"
+  '_' works for every value.
+
+FUNCTIONS
+  
