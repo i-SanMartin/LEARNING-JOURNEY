@@ -26,3 +26,38 @@ MORE ON LISTS
 
   -lists can be used as stacks last-in, first-out with append and pop.
 
+  -list can also be used as queues fifo, with append and popleft, after import deque from collections.
+
+  -better way to define lists
+    squares = list(map(lambda x: x**2, range(10)))
+    squares = [x**2 for x in range(10)]
+    [(x, y) for x in [1,2,3] for y in [3,1,4] if x != y]
+
+DEL STATEMENT
+  -same as pop but doesn´t return value.
+    del a[0]
+
+TUPLES AND SEQUENCES
+  -A tuple is a number of values separated by comas
+    t = 12345, 54321, 'hello!'
+  -Tuples are not mutables but can containt mutable objects like lists.
+
+SETS
+  -Unordered collection with two duplicated elements.
+  -Useful for membersip testing or eleminating duplicated entries.
+  -Non suscriptable but can acces values as a, b =set(list)
+    basket = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'}
+    print(basket)                      # show that duplicates have been removed
+    {'orange', 'banana', 'pear', 'apple'}
+
+    a = set('abracadabra')
+    b = set('alacazam')
+    a                                  # unique letters in a
+    {'a', 'r', 'b', 'c', 'd'}
+    a - b                              # letters in a but not in b
+    {'r', 'd', 'b'}
+
+
+DICTIONARIES
+  -Can be indexed with
+  -
