@@ -59,5 +59,43 @@ SETS
 
 
 DICTIONARIES
-  -Can be indexed with
-  -
+  -Can be indexed with keys. Keys are uniques
+  -Tuples can be used as keys if the tuple does not have any mutable object.
+  -If turned into list will give a list with a tuple for each value-key pair.
+    tel = {'jack': 4098, 'sape': 4139}
+    tel['guido'] = 4127
+    tel
+    {'jack': 4098, 'sape': 4139, 'guido': 4127}
+
+LOOPING TECHNIQUES
+  -With a dictionary can be iterated through keys and values using the method items().
+    knights = {'gallahad': 'the pure', 'robin': 'the brave'}
+    for k, v in knights.items():
+        print(k, v)
+
+  -Use enumerate() to obtain the index
+    for i, v in enumerate(['tic', 'tac', 'toe']):
+        print(i, v)
+
+  -With zip() a loop can iterate through two or more lists.
+    for q, a in zip(questions, answers):
+        print('What is your {0}?  It is {1}.'.format(q, a))        
+
+  -In range the step and direction can be modified with the thirth argument.
+    for i in reversed(range(1, 10, 2)):
+        print(i)
+
+  -Using set elimenate duplicated elements.
+    for f in sorted(set(basket)):
+        print(f)
+
+MORE ON CONDITIONS
+  -Conditions in if or while can contain any operator.
+  -The operator 'in' and 'not in' are membership test.
+  -'is' or 'is not' compare' wether two objects are the same object.
+  -Comparison can be changed c>b==a chechs if c>b and if b == a.
+  -'not' highest priority, then
+
+COMPARING SEQUENCES AND OTHER TYPES
+  -The first element are compared and if the comparison is not concluded continues with the next ones.
+  -The sequences that finishes first would be the "lesser" one.
