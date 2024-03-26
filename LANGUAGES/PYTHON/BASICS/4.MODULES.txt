@@ -1,0 +1,77 @@
+6 MODULES
+
+  -If an interpreter is used, when closing and reoping the data and fucntions is lost.
+  -To avoid this scripts are used. Files that contain the code.
+  -Python has a way to put definitions in a file and use them in a script or in the interpreter. The file is called module.
+  -Definitons of module can be imported into other modules or into the main module
+
+  -A module is a file containing python definitions and statemens.
+  -The file name is the module name with the suffix '.py'.
+  -Doen´t add the functions to the namespace, just adds the module fibo.
+  -The module name can be accessed within the module through variable __name__.
+
+  -To use it in other file:
+    imoport fibo
+  -Access a function:
+    fibo.fib(100)
+
+MORE ON MODULES
+  -A module can have statements and function definitions.
+  -The statements are intendend to initialize de module. Executed only the first time the module is imported
+  -The module has its own namespace, which is used as global namespace for all functions.
+  -Global variables can be modified refering to them as modname.itemname.
+  -Modules can import other modules. Tipically modules are imported at the beginning of the code.
+  -Other way to import:
+    from fibo import fib,fib2    #fibo is not defined but fib and fib2 are imported
+    from fibo import *           #all functions are imported except for the ones starting with _
+    import numpy as np           #changes name of the imported module
+
+    EXECUTING MODULES AS SCRIPTS
+      -If a python module is called like this:
+        python fibo.py <arguments>
+      -The code inside__name__=="__main__ will run
+        if __name__ == "__main__":
+          import sys
+          fib(int(sys.argv[1]))
+      Ex:
+        python fibo.py 50
+        0 1 1 2 3 5 8 13 21 34
+      -But if imported the code will no run
+
+    THE MODULE SEARCH PATH
+      -First searches in modules listed in 'sys.builtin_module_names'. Then in 'sys.path', initialized from different locations.
+      -Python programas can modify sys.path.
+
+    COMPILED PYTHON FILES
+      -To speed loading modules, Python caches the compiled version of each module in __pycache__ directory under the name: module.version.pyc.
+      -This allows differente python version modules to coexist.
+
+STANDARD MODULES
+  -Python comes with some standard modules specified in the Python Library Reference
+  -Some modules are built in into the interpreter. Is a configuration option that depends on the undelying platform.
+  -'sys' is built in module in every python interpreter.
+  -sys.path is a list that determines the search for modules. New paths can be appended.
+
+THE dir() FUNCTION
+  -dir() function gives witch names a module defines:
+    import fibo, sys
+    dir(fibo)
+    ['__name__', 'fib', 'fib2']
+  -Without arguments gives the defined names except the builtin functions.
+  -To obtain built in functions dir(builtin) has to be used.
+
+PACKAGES
+  -A way of structuring python´s module namespace using "dotted module names". Ex: A.B->submodule B in package A
+  -If you want to create a collection of modules (package) for sound data handling for diferent formats (.wav, .aiff)
+  you can create a module for each format or operation.
+  -__init__.py file is needed for python to consider a directory as a package
+    import sound.effects.echo
+    sound.effects.echo.echofilter(input, output, delay=0.7, atten=4)
+    from sound.effects import echo
+    ...
+
+    IMPORTING FROM A PACKAGE
+      -
+      
+      
+      
