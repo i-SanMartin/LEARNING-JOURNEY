@@ -74,7 +74,6 @@ PACKAGES
       -Doing this can create some side-effects.
       -If __init__.py has a list named __all__ is the list of module names to be imported with *.
       -Submodules can become shadowed by locally defined names.
-
       
       
       
